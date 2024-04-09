@@ -1,30 +1,77 @@
 ---
-title: "Manual R"
-author: "Matías Pozo"
+# title: "Manual R"
+author: "MAUCO"
 date: "2024-04-09"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 2
+    number_sections: true
+    theme: lumen
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# **Manual básico de R**
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para poder manejar, manipular, visualizar y analizar un `dataset`.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# **Entorno RStudio Cloud**
 
-```{r cars}
-summary(cars)
+El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o regiones, las cuales se enlistan a continuación y pueden visualizarse en la **Figura 1.1**.
+
+1. La barra de tareas
+2. El editor de scripts (source)
+3. El ambiente e historial
+4. La consola
+5. Plots y pestañas de paquetes
+
+```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 1.1: Entorno de trabajo RStudio Cloud", out.width = '80%'}
+knitr::include_graphics("images/entorno_num.png")
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+## **La barra de tareas**
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+La barra de herramientas de RStudio se encuentra en la parte superior de la interfaz y proporciona acceso rápido a diversas funciones y herramientas útiles para trabajar con R y proyectos de análisis de datos. A continuación, se presenta una descripción de las principales opciones que puedes encontrar en la barra de tareas de RStudio:
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+- File (Archivo): Esta opción te permite realizar operaciones relacionadas con archivos, como crear, abrir y guardar scripts de R, así como abrir proyectos existentes y cerrar sesiones.
+
+- Edit (Edición): Aquí encontrarás opciones para realizar acciones de edición de texto en el editor de scripts, como copiar, pegar, deshacer, rehacer y buscar texto.
+
+- Code (Código): Esta opción proporciona herramientas para trabajar con código, como ejecutar selecciones de código, comentar o descomentar bloques de código, y ajustar el formato del código.
+
+- View (Ver): Te permite cambiar entre diferentes vistas dentro de RStudio, como alternar entre la vista de consola y la vista de scripts, así como mostrar u ocultar diferentes paneles y ventanas.
+
+- Build (Construir): Aquí encontrarás herramientas relacionadas con la construcción de proyectos, como la opción para compilar y cargar paquetes, así como la generación de documentos y la creación de presentaciones.
+
+- Debug (Depurar): Esta opción proporciona herramientas para depurar y rastrear errores en tu código, como establecer puntos de interrupción, ejecutar el código paso a paso y verificar el entorno de ejecución.
+
+- Git (Control de versiones): Si estás trabajando con control de versiones Git, esta opción te permite acceder a herramientas para realizar operaciones de control de versiones, como confirmar cambios, fusionar ramas y gestionar repositorios.
+
+- Tools (Herramientas): Aquí encontrarás acceso a diversas herramientas adicionales, como el instalador de paquetes, el administrador de conexiones de base de datos, y la terminal de comandos.
+
+- Session (Sesión): Esta opción proporciona herramientas para administrar tu sesión de R, como la opción para reiniciar la sesión, cambiar la configuración de la sesión y consultar información sobre el sistema y la versión de R.
+
+- Help (Ayuda): Te proporciona acceso rápido a la documentación y ayuda relacionada con R y RStudio, incluyendo enlaces a la documentación oficial, foros de ayuda y recursos adicionales.
+
+
+
+
+
+# **Entorno RStudio Cloud**
+
+## Tab setting {.tabset .tabset-fade .tabset-pills}
+
+### By Product
+
+(tab content)
+
+### By Region
+
+(tab content)
