@@ -31,14 +31,14 @@ El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o 
 4. La consola
 5. Plots y pestañas de paquetes
 
-```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 1.1: Entorno de trabajo RStudio Cloud", out.width = '80%'}
+```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 1.1: Entorno de trabajo RStudio Cloud", out.width = '100%'}
 knitr::include_graphics("images/entorno_num.png")
 ```
 
 
 ## **La barra de tareas**
 
-La barra de herramientas de RStudio se encuentra en la parte superior de la interfaz y proporciona acceso rápido a diversas funciones y herramientas útiles para trabajar con R y proyectos de análisis de datos. A continuación, se presenta una descripción de las principales opciones que puedes encontrar en la barra de tareas de RStudio:
+La barra de herramientas de RStudio se encuentra en la parte superior de la interfaz y proporciona acceso rápido a diversas funciones y herramientas útiles para trabajar con R y proyectos de análisis de datos. A continuación, se presenta una descripción de las principales opciones que puedes encontrar en la barra de tareas:
 
 - File (Archivo): Esta opción te permite realizar operaciones relacionadas con archivos, como crear, abrir y guardar scripts de R, así como abrir proyectos existentes y cerrar sesiones.
 
@@ -59,7 +59,6 @@ La barra de herramientas de RStudio se encuentra en la parte superior de la inte
 - Session (Sesión): Esta opción proporciona herramientas para administrar tu sesión de R, como la opción para reiniciar la sesión, cambiar la configuración de la sesión y consultar información sobre el sistema y la versión de R.
 
 - Help (Ayuda): Te proporciona acceso rápido a la documentación y ayuda relacionada con R y RStudio, incluyendo enlaces a la documentación oficial, foros de ayuda y recursos adicionales.
-
 
 
 
