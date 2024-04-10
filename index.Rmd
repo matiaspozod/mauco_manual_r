@@ -31,7 +31,7 @@ El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o 
 4. La consola
 5. Plots y pestañas de paquetes
 
-```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 1.1: Entorno de trabajo RStudio Cloud", out.width = '100%'}
+```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 1.1: Entorno de trabajo RStudio Cloud", out.width = '400px'}
 knitr::include_graphics("images/entorno_num.png")
 ```
 
