@@ -17,9 +17,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 # **Manual básico de R**
 
-Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para poder manejar, manipular, visualizar y analizar un `dataset`.
+Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para poder gestionar, manipular, transformar, analizar y visualizar un `dataset` a los interesados que han solicitado datos pertenecientes a la *Cohorte MAUCO*.
 
 # **Inicio de Sesión en la plataforma**
 
@@ -39,16 +40,15 @@ Para iniciar sesión en RStudio Cloud, sigue estos pasos:
 
 El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o regiones, las cuales se enlistan a continuación y pueden visualizarse en la **Figura 3.1**.
 
-1. La barra de tareas
-2. El editor de scripts (source)
-3. El ambiente e historial
-4. La consola
-5. Plots y pestañas de paquetes
+**1. La barra de tareas**  
+**2. El editor de scripts (source)**  
+**3. Paneles de ambiente e historial**  
+**4. La consola**  
+**5. Paneles de archivos (files) y gráficos (plots)**  
 
-```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 3.1: Entorno de trabajo RStudio Cloud", out.width = '2000px'}
+```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 3.1: Entorno de trabajo RStudio Cloud.  \n1. Barra de tareas, 2. Editor de Scripts, 3. Paneles de ambiente e historial, 4. Consola, 5. Paneles de archivos y gráficos.", out.width = '2000px'}
 knitr::include_graphics("images/entorno_num.png")
 ```
-
 
 ## **Barra de tareas**
 
@@ -72,6 +72,30 @@ La barra de herramientas de RStudio se encuentra en la parte superior de la inte
 - Help (Ayuda): Te proporciona acceso rápido a la documentación y ayuda relacionada con R y RStudio, incluyendo enlaces a la documentación oficial, foros de ayuda y recursos adicionales.
 
 ## **Editor de scripts**
+
+El editor de scripts (Source) en RStudio Cloud es una herramienta central para escribir, editar y ejecutar código en R. 
+
+Con el editor de scripts, podras crear y modificar archivos de script (.R) de manera eficiente, permitiendo una programación estructurada y organizada. Además, el editor facilita la ejecución de código, ya sea línea por línea o en su totalidad, lo que te permitirá probar y depurar su código de manera interactiva.
+
+En resumen, el editor de scripts en RStudio Cloud es una herramienta que facilita el desarrollo y la ejecución de código en R, proporcionando un entorno intuitivo y funcional para trabajar en proyectos de análisis de datos y estadísticas.
+
+## **Ambiente e historial**
+
+El Ambiente (Environment) y el Historial (History) son dos paneles importantes que ofrecen información y funcionalidades clave para el desarrollo de proyectos en R. 
+
+El panel Ambiente (Environment) muestra información sobre las **variables** y **funciones** que están actualmente cargadas en la sesión de R. Proporciona una visión general de los objetos existentes en el **entorno de trabajo** (Workspace), incluyendo sus *nombres*, *tipos de datos* y *valores actuales*. Este panel es útil para monitorear y gestionar variables durante el desarrollo de un proyecto, lo cual permite inspeccionar y manipular datos en tiempo real.
+
+El panel Historial (History) registra los comandos que han sido ejecutados en la sesión actual de R. Muestra una lista cronológica de los comandos previamente ingresados por el usuario, junto con los resultados correspondientes si los hubiera. Esto facilita la revisión y reproducción de acciones previas, lo que puede ser útil para recordar pasos específicos.
+
+## **Consola**
+
+La consola en RStudio Cloud es el espacio interactivo donde puedes escribir y ejecutar comandos de R en tiempo real. Es el lugar donde se muestra la salida de los comandos y los mensajes de error, lo que permite a los usuarios interactuar directamente con el lenguaje de programación R.
+
+## **Archivos y gráficos**
+
+El panel de archivos (files) proporciona una interfaz visual para explorar y gestionar los archivos y directorios en tu proyecto. Te permite navegar por la estructura de archivos, crear nuevos archivos, importar scripts y organizar tu trabajo de manera eficiente. Además, este panel facilita la búsqueda y manipulación de archivos, lo que ayuda a los usuarios a mantener sus proyectos organizados y bien estructurados.
+
+Por otro lado, el panel de gráficos (plots) muestra los gráficos y visualizaciones generados durante tu sesión de R. Es un espacio dedicado para explorar y examinar tus resultados visuales de manera interactiva. Desde este panel, puedes visualizar gráficos y exportar imágenes.
 
 
 ## Tab setting {.tabset .tabset-fade .tabset-pills}
