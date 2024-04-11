@@ -21,9 +21,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para poder manejar, manipular, visualizar y analizar un `dataset`.
 
+# **Inicio de Sesión en la plataforma**
+
+
+Para iniciar sesión en RStudio Cloud, sigue estos pasos:
+
+1. Abre tu navegador web y ve a la página de inicio de [RStudio Cloud MAUCO](https://rstudio.mauco.org/).
+
+2. Una vez en la página de inicio, ingresa tu nombre de usuario en el campo **Username** y tu contraseña en el campo **Password**. 
+
+3. Después de ingresar tu información de inicio de sesión, haz clic en el botón **Sign In** para acceder a tu cuenta.
+
+4. Si la información de inicio de sesión son correctos, se te dirigirá a tu espacio de trabajo en RStudio Cloud, donde podrás acceder a tus proyectos y comenzar a trabajar con los datos solicitados.
+
+
 # **Entorno RStudio Cloud**
 
-El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o regiones, las cuales se enlistan a continuación y pueden visualizarse en la **Figura 1.1**.
+El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o regiones, las cuales se enlistan a continuación y pueden visualizarse en la **Figura 3.1**.
 
 1. La barra de tareas
 2. El editor de scripts (source)
@@ -31,12 +45,12 @@ El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o 
 4. La consola
 5. Plots y pestañas de paquetes
 
-```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 1.1: Entorno de trabajo RStudio Cloud", out.width = '2000px'}
+```{r entorno, echo=FALSE, fig.align = 'center', fig.cap="Figura 3.1: Entorno de trabajo RStudio Cloud", out.width = '2000px'}
 knitr::include_graphics("images/entorno_num.png")
 ```
 
 
-## **La barra de tareas**
+## **Barra de tareas**
 
 La barra de herramientas de RStudio se encuentra en la parte superior de la interfaz y proporciona acceso rápido a diversas funciones y herramientas útiles para trabajar con R y proyectos de análisis de datos. A continuación, se presenta una descripción de las principales opciones que puedes encontrar en la barra de tareas:
 
@@ -52,18 +66,13 @@ La barra de herramientas de RStudio se encuentra en la parte superior de la inte
 
 - Debug (Depurar): Esta opción proporciona herramientas para depurar y rastrear errores en tu código, como establecer puntos de interrupción, ejecutar el código paso a paso y verificar el entorno de ejecución.
 
-- Git (Control de versiones): Si estás trabajando con control de versiones Git, esta opción te permite acceder a herramientas para realizar operaciones de control de versiones, como confirmar cambios, fusionar ramas y gestionar repositorios.
-
+- Profile (Perfil): Esta opción te permite acceder y gestionar tu perfil de usuario. 
 - Tools (Herramientas): Aquí encontrarás acceso a diversas herramientas adicionales, como el instalador de paquetes, el administrador de conexiones de base de datos, y la terminal de comandos.
-
-- Session (Sesión): Esta opción proporciona herramientas para administrar tu sesión de R, como la opción para reiniciar la sesión, cambiar la configuración de la sesión y consultar información sobre el sistema y la versión de R.
 
 - Help (Ayuda): Te proporciona acceso rápido a la documentación y ayuda relacionada con R y RStudio, incluyendo enlaces a la documentación oficial, foros de ayuda y recursos adicionales.
 
+## **Editor de scripts**
 
-
-
-# **Entorno RStudio Cloud**
 
 ## Tab setting {.tabset .tabset-fade .tabset-pills}
 
