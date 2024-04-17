@@ -97,13 +97,36 @@ El panel de archivos (files) proporciona una interfaz visual para explorar y ges
 
 Por otro lado, el panel de gráficos (plots) muestra los gráficos y visualizaciones generados durante tu sesión de R. Es un espacio dedicado para explorar y examinar tus resultados visuales de manera interactiva. Desde este panel, puedes visualizar gráficos y exportar imágenes.
 
+# **Librerias **
 
-## Tab setting {.tabset .tabset-fade .tabset-pills}
+En R, una "librería" (o "paquete") es un conjunto de funciones y datos que extienden la funcionalidad básica del lenguaje. Estas librerías son creadas por desarrolladores de la comunidad de R y pueden contener herramientas para una amplia gama de tareas, como análisis estadístico, visualización de datos, manipulación de datos, modelado predictivo y más.
 
-### By Product
+Cuando instalas una librería en R, estás agregando nuevas funciones y capacidades a tu entorno de programación. Esto te permite aprovechar el trabajo previo de otros usuarios y acceder a herramientas especializadas para tus proyectos.
 
-(tab content)
+Por ejemplo, si estás trabajando en análisis de datos, podrías instalar y cargar la librería "ggplot2" para crear gráficos de alta calidad. O si estás realizando análisis estadístico, podrías usar la librería "dplyr" para manipular y resumir datos de manera eficiente.
 
-### By Region
+Para utilizar una librería en R, primero debes instalarla en tu sistema usando la función install.packages() y luego cargarla en tu sesión de R usando la función library(). Una vez cargada, puedes acceder a las funciones y datos proporcionados por la librería para realizar tareas específicas en tu análisis de datos o proyecto.
 
-(tab content)
+# **Carga de base de datos en el espacio de trabajo.**
+
+Luego de haber iniciado a tu sesión de RStudio CLoud, deberas identificar en el panel de archivos (files) la base datos con la cual realizarás tus futuros análisis. Las bases de datos pueden encontrarse en un sin fin de extensiones de archivos. 
+
+A continuación se explicara como cargar la base de datos en el espacio de trabajo (panel environment) para las extensiones de archivos más utilizadas.
+
+## Base de datos en archivo con extensión .RData
+
+## Base de datos en archivo con extensión .csv
+
+## Base de datos en archivo con extensión .xlsx
+
+
+
+<!-- ## Tab setting {.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ### By Product -->
+
+<!-- (tab content) -->
+
+<!-- ### By Region -->
+
+<!-- (tab content) -->
