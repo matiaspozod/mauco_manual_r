@@ -18,11 +18,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# **Manual básico de R**
+# **Manual básico de R.**
 
 Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para poder gestionar, manipular, transformar, analizar y visualizar un `dataset` a los interesados que han solicitado datos pertenecientes a la *Cohorte MAUCO*.
 
-# **Inicio de Sesión en la plataforma**
+# **Inicio de Sesión en la plataforma.**
 
 
 Para iniciar sesión en RStudio Cloud, sigue estos pasos:
@@ -36,7 +36,7 @@ Para iniciar sesión en RStudio Cloud, sigue estos pasos:
 4. Si la información de inicio de sesión son correctos, se te dirigirá a tu espacio de trabajo en RStudio Cloud, donde podrás acceder a tus proyectos y comenzar a trabajar con los datos solicitados.
 
 
-# **Entorno RStudio Cloud**
+# **Entorno RStudio Cloud.**
 
 El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o regiones, las cuales se enlistan a continuación y pueden visualizarse en la **Figura 3.1**.
 
@@ -50,7 +50,7 @@ El entorno de trabajo de RStudio Cloud se subdivide en una serie de secciones o 
 knitr::include_graphics("images/entorno_num.png")
 ```
 
-## **Barra de tareas**
+## **Barra de tareas.**
 
 La barra de herramientas de RStudio se encuentra en la parte superior de la interfaz y proporciona acceso rápido a diversas funciones y herramientas útiles para trabajar con R y proyectos de análisis de datos. A continuación, se presenta una descripción de las principales opciones que puedes encontrar en la barra de tareas:
 
@@ -71,7 +71,7 @@ La barra de herramientas de RStudio se encuentra en la parte superior de la inte
 
 - Help (Ayuda): Te proporciona acceso rápido a la documentación y ayuda relacionada con R y RStudio, incluyendo enlaces a la documentación oficial, foros de ayuda y recursos adicionales.
 
-## **Editor de scripts**
+## **Editor de scripts.**
 
 El editor de scripts (Source) en RStudio Cloud es una herramienta central para escribir, editar y ejecutar código en R. 
 
@@ -79,7 +79,7 @@ Con el editor de scripts, podras crear y modificar archivos de script (.R) de ma
 
 En resumen, el editor de scripts en RStudio Cloud es una herramienta que facilita el desarrollo y la ejecución de código en R, proporcionando un entorno intuitivo y funcional para trabajar en proyectos de análisis de datos y estadísticas.
 
-## **Ambiente e historial**
+## **Ambiente e historial.**
 
 El Ambiente (Environment) y el Historial (History) son dos paneles importantes que ofrecen información y funcionalidades clave para el desarrollo de proyectos en R. 
 
@@ -87,17 +87,42 @@ El panel Ambiente (Environment) muestra información sobre las **variables** y *
 
 El panel Historial (History) registra los comandos que han sido ejecutados en la sesión actual de R. Muestra una lista cronológica de los comandos previamente ingresados por el usuario, junto con los resultados correspondientes si los hubiera. Esto facilita la revisión y reproducción de acciones previas, lo que puede ser útil para recordar pasos específicos.
 
-## **Consola**
+## **Consola.**
 
 La consola en RStudio Cloud es el espacio interactivo donde puedes escribir y ejecutar comandos de R en tiempo real. Es el lugar donde se muestra la salida de los comandos y los mensajes de error, lo que permite a los usuarios interactuar directamente con el lenguaje de programación R.
 
-## **Archivos y gráficos**
+## **Archivos y gráficos.**
 
 El panel de archivos (files) proporciona una interfaz visual para explorar y gestionar los archivos y directorios en tu proyecto. Te permite navegar por la estructura de archivos, crear nuevos archivos, importar scripts y organizar tu trabajo de manera eficiente. Además, este panel facilita la búsqueda y manipulación de archivos, lo que ayuda a los usuarios a mantener sus proyectos organizados y bien estructurados.
 
 Por otro lado, el panel de gráficos (plots) muestra los gráficos y visualizaciones generados durante tu sesión de R. Es un espacio dedicado para explorar y examinar tus resultados visuales de manera interactiva. Desde este panel, puedes visualizar gráficos y exportar imágenes.
 
-# **Librerias **
+# **Carga de base de datos en el espacio de trabajo.**
+
+Luego de haber iniciado a tu sesión de RStudio CLoud, deberas identificar en el panel de archivos (files) la base datos con la cual realizarás tus futuros análisis. Las bases de datos pueden encontrarse en un sin fin de extensiones de archivos. 
+
+A continuación se explicara como cargar la base de datos en el espacio de trabajo (panel environment) para las extensiones de archivos más utilizadas.
+
+## **Base de datos en archivo con extensión _.RData_**
+
+La extensión `.RData` es una extensión de archivos propia del lenguaje R. Este archivo permite almacenar distintos objetos de R en un solo archivo. En terminos generales, 
+todos los elementos que maneja R son objetos, dentro de los cuales pueden ser:
+
+- Valores numéricos
+- Vectores
+- Matrices
+- Funciones
+- Bases de datos
+- Gráficos
+- Entre otros...
+
+
+
+## **Base de datos en archivo con extensión _.csv_**
+
+## **Base de datos en archivo con extensión _.xlsx_**
+
+# **Librerias.**
 
 En R, una "librería" (o "paquete") es un conjunto de funciones y datos que extienden la funcionalidad básica del lenguaje. Estas librerías son creadas por desarrolladores de la comunidad de R y pueden contener herramientas para una amplia gama de tareas, como análisis estadístico, visualización de datos, manipulación de datos, modelado predictivo y más.
 
@@ -106,19 +131,6 @@ Cuando instalas una librería en R, estás agregando nuevas funciones y capacida
 Por ejemplo, si estás trabajando en análisis de datos, podrías instalar y cargar la librería "ggplot2" para crear gráficos de alta calidad. O si estás realizando análisis estadístico, podrías usar la librería "dplyr" para manipular y resumir datos de manera eficiente.
 
 Para utilizar una librería en R, primero debes instalarla en tu sistema usando la función install.packages() y luego cargarla en tu sesión de R usando la función library(). Una vez cargada, puedes acceder a las funciones y datos proporcionados por la librería para realizar tareas específicas en tu análisis de datos o proyecto.
-
-# **Carga de base de datos en el espacio de trabajo.**
-
-Luego de haber iniciado a tu sesión de RStudio CLoud, deberas identificar en el panel de archivos (files) la base datos con la cual realizarás tus futuros análisis. Las bases de datos pueden encontrarse en un sin fin de extensiones de archivos. 
-
-A continuación se explicara como cargar la base de datos en el espacio de trabajo (panel environment) para las extensiones de archivos más utilizadas.
-
-## Base de datos en archivo con extensión .RData
-
-## Base de datos en archivo con extensión .csv
-
-## Base de datos en archivo con extensión .xlsx
-
 
 
 <!-- ## Tab setting {.tabset .tabset-fade .tabset-pills} -->
