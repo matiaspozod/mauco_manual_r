@@ -116,11 +116,49 @@ todos los elementos que maneja R son objetos, dentro de los cuales pueden ser:
 - Gráficos
 - Entre otros...
 
+Si en su panel de archivos tiene un archivo con extensión `.RData`, puede cargar todos los objetos almacenados en dicho archivo utilizando el siguiente comando
 
+```{r, eval=FALSE}
+load("nombre_archivo.Rdata")
+```
+
+Así, todos los objetos almacenados en su archivo `.RData`seran cargados en su espacio de trabajo.
 
 ## **Base de datos en archivo con extensión _.csv_**
 
+Si dispone de un archivo con extensión `.csv` en su panel de archivos, podra cargarlo en su espacio de trabajo con la función `read.csv()`.
+
+En el siguiente ejemplo, se presenta un caso de uso con la base de datos `penguins.csv`.
+
+```{r}
+db_penguins <- read.csv(file = "data/penguins.csv",
+                        header = T,
+                        sep = ",")
+```
+```{r, echo=F}
+knitr::kable(head(db_penguins), caption = "Base de datos penguins desde archivo .csv", align = "c")
+```
+
+La base de datos se almacena en el objeto `db_penguins`. Además, se utilizan tres argumentos de la función `read.csv()`. El argumento `file` permite indicarle a la función la ruta del archivo dentro de nuestro directorio de trabajo. El argumento `header` permite indicarle a la función que nuestra base de datos disponde de encabezados de columna, utilizando un valor booleano T (True). Finalmente, el argumento `sep` permite indicar el signo empleado para la separación de valores dentro del archivo csv.
+
 ## **Base de datos en archivo con extensión _.xlsx_**
+
+Para cargar una base de datos con la extensión `.xlsx`, se recomienda el uso de la función `read_xlsx()` de la libreria `readxl`.
+
+Primero, cargue la libreria a su entorno de trabajo. Luego, utilize la función `read_xlsx()` como se muestra en el siguiente ejemplo con la base de datos penguins.
+
+
+```{r}
+library(readxl)
+
+db_penguins <- read_xlsx(path = "data/penguins.xlsx",
+                         sheet = "Hoja1")
+```
+```{r, echo=F}
+knitr::kable(head(db_penguins), caption = "Base de datos penguins desde archivo .xlsx")
+```
+
+La base de datos se almacena en el objeto `db_penguins`. Además, se utilizan dos argumentos de la función `read_xlsx()`. El argumento `path` permite indicarle a la función la ubicación del archivo dentro del directorio de trabajo. El argumento `sheet` permite especificar el nombre de la hoja del libro en la cual esta almacenada la base de datos.
 
 # **Librerias.**
 
@@ -131,6 +169,22 @@ Cuando instalas una librería en R, estás agregando nuevas funciones y capacida
 Por ejemplo, si estás trabajando en análisis de datos, podrías instalar y cargar la librería "ggplot2" para crear gráficos de alta calidad. O si estás realizando análisis estadístico, podrías usar la librería "dplyr" para manipular y resumir datos de manera eficiente.
 
 Para utilizar una librería en R, primero debes instalarla en tu sistema usando la función install.packages() y luego cargarla en tu sesión de R usando la función library(). Una vez cargada, puedes acceder a las funciones y datos proporcionados por la librería para realizar tareas específicas en tu análisis de datos o proyecto.
+
+# **Uso y liberación de memoria RAM**
+
+R permite identificar el uso actual de memoria RAM de su ambiente de trabajo. Para esto dirígase a la pestaña **Environment** y seleccione la opción **Memory usage report...** en el icono de gráfico de torta, lo cual abrira un resumen del uso de memoria de su sesión de R como se muestra en la **Figura 6.1**.
+
+```{r memoria, echo=FALSE, fig.align = 'center', fig.cap="Figura 6.1: Uso de memoria asociada a su sesión de trabajo en R", out.width = '800px'}
+knitr::include_graphics("images/gif_memoria.gif")
+```
+
+Este uso de memoria corresponde aproximadamente a la suma del tamaño de todos los objetos de R en el entorno global, más las librerias que se han cargado y la sobrecarga interna de R. 
+
+Es posible liberar una porción de memoria del espacio de trabajo cuando no se están utilizando algunos objetos dentro del Environment. Si desea liberar espacio de memoria se recomienda realizar lo siguiente:
+
+1. Crear una imagen del espacio de trabajo de todos los objetos con el comando `save.image(file = "Nombre_archivo.RData")`, donde Nombre_archivo es el nombre que le otorgara a la imagen de su espacio de trabajo.
+
+2. Luego, utilizar la opción **Restart R** la cual se encuentra dentro de la opción **Session** en la barra de tareas, la cual liberara el espacio de memoria de los objetos del espacio de trabajo.
 
 
 <!-- ## Tab setting {.tabset .tabset-fade .tabset-pills} -->
