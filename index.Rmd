@@ -1,16 +1,18 @@
 ---
-# title: "Manual R"
 author: "MAUCO"
 date: "2024-04-09"
-output: 
+output:
   html_document:
     toc: true
-    toc_float: 
+    toc_float:
       collapsed: false
       smooth_scroll: false
     toc_depth: 2
     number_sections: true
     theme: lumen
+  pdf_document:
+    toc: true
+    toc_depth: '2'
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # **Manual básico de R.**
 
-Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para poder gestionar, manipular, transformar, analizar y visualizar un `dataset` a los interesados que han solicitado datos pertenecientes a la *Cohorte MAUCO*.
+Este manual tiene como finalidad ser una guía básica del uso del ambiente Rstudio cloud para los investigadores y/o colaboradores que han solicitado datos pertenecientes a la *Cohorte MAUCO*.
 
 # **Inicio de Sesión en la plataforma.**
 
@@ -170,6 +172,15 @@ Por ejemplo, si estás trabajando en análisis de datos, podrías instalar y car
 
 Para utilizar una librería en R, primero debes instalarla en tu sistema usando la función install.packages() y luego cargarla en tu sesión de R usando la función library(). Una vez cargada, puedes acceder a las funciones y datos proporcionados por la librería para realizar tareas específicas en tu análisis de datos o proyecto.
 
+Como ejemplo, se instala y carga en el ambiente la libreria dplyr.
+
+```{r libreria, eval=FALSE}
+install.packages("dplyr")
+library(dplyr)
+```
+
+
+
 # **Uso y liberación de memoria RAM**
 
 R permite identificar el uso actual de memoria RAM de su ambiente de trabajo. Para esto dirígase a la pestaña **Environment** y seleccione la opción **Memory usage report...** en el icono de gráfico de torta, lo cual abrira un resumen del uso de memoria de su sesión de R como se muestra en la **Figura 6.1**.
@@ -196,3 +207,4 @@ Es posible liberar una porción de memoria del espacio de trabajo cuando no se e
 <!-- ### By Region -->
 
 <!-- (tab content) -->
+
